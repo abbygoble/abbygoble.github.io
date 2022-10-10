@@ -3,6 +3,6 @@ body {
     font-size: 18px;
 }
 
-header,footer {
+h1, footer {
     background-color: cornflowerblue;
 }
