@@ -15,3 +15,6 @@ h1, footer {
     box-shadow: 0px 0px 2px 1px black;
 }
 
+.square-bullets {
+    list-style-type: square;
+}
