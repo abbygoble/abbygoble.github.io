@@ -1,32 +1,40 @@
+/*changes font family and size for body text*/
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
 
+/*changes header and footer background call*/
 h1, footer {
     background-color: cornflowerblue;
 }
 
+/*changes font colour of title*/
 .site-title {
     color: antiquewhite;
 }
 
+/*adds box shadow to image */
 .my-image {
     box-shadow: 0px 0px 2px 1px black;
 }
 
+/*changes formatting of bulletpoints to square*/
 .square-bullets {
     list-style-type: square;
 }
 
+/*changes background colour of odd list compinents*/
 .square-bullets :nth-child(odd){
     background-color: darksalmon;
 }
 
+/*removes bullet point of navigation list*/
 .index-page {
     list-style: none;
 }
 
+/*alters style of navigation list*/
 a:link {
     text-decoration: none;
     background-color: darkseagreen;
