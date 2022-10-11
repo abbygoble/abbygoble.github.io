@@ -26,3 +26,13 @@ h1, footer {
 .index-page {
     list-style: none;
 }
+
+a:link {
+    text-decoration: none;
+    background-color: darkseagreen;
+    border-color: black;
+}
+
+a:hover, a:active {
+    background-color: yellow
+}
