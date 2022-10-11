@@ -18,3 +18,7 @@ h1, footer {
 .square-bullets {
     list-style-type: square;
 }
+
+.square-bullets :nth-child(odd){
+    background-color: darksalmon;
+}
