@@ -22,3 +22,7 @@ h1, footer {
 .square-bullets :nth-child(odd){
     background-color: darksalmon;
 }
+
+.index-page {
+    list-style-type: none;
+}
