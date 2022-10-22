@@ -12,9 +12,17 @@ html {
     width: 100%;
 }
 
-.title {
-    text-align: center;
-    color: white;
+.container {
+    position: relative;
+     text-align: center;
+     color: white;   
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 nav ul li {
@@ -46,8 +54,29 @@ a:link, a:visited {
     width: 95%;
     border: 1px solid black;
     padding: 2px;
-    margin: 10px;
-    
+    margin: 10px;  
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8 px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.radio {
+    display: inline;
+}
+
+.information {
+    padding: 2px;
 }
 
 .copyright {
