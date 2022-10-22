@@ -70,6 +70,11 @@ textarea {
     margin: 8px 0;
     box-sizing: border-box;
 }
+
+input [type=radio] {
+    display: inline;
+}
+
 .information {
     padding: 2px;
 }
