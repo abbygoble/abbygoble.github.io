@@ -57,7 +57,7 @@ a:link, a:visited {
     margin: 10px;  
 }
 
-input {
+input [type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8 px 0;
@@ -70,17 +70,14 @@ textarea {
     margin: 8px 0;
     box-sizing: border-box;
 }
-
-.radio {
-    display: inline;
-}
-
 .information {
     padding: 2px;
 }
 
 .copyright {
     text-align: right;
+    padding: 12px 12px;
+    margin: 8px;
 }
 
 body {
