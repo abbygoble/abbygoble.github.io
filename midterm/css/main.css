@@ -14,10 +14,10 @@ nav ul li {
     border-right: 1px solid black;
 }
 
-.img { 
-    width: 25px;
+.image img{
+    width: 10%;
+    margin-left: 10px;
 }
-
 .box {
     
     width: 95%;
@@ -25,6 +25,10 @@ nav ul li {
     padding: 2px;
     margin: 10px;
     
+}
+
+.copyright {
+    text-align: right;
 }
 
 body {
