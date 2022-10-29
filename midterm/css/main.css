@@ -144,7 +144,7 @@ input [type=text] {
 textarea {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px 0px;
     box-sizing: border-box;
 }
 
@@ -166,6 +166,10 @@ input [type=radio] {
     width: 100%;
 }
 
+h3 {
+    padding: 5px;
+}
+
 button {
     text-transform: uppercase;
     background-color: #aad4cf;
@@ -173,7 +177,8 @@ button {
     border-color: black;
     color: black;
     border-radius: 0%;
-
+    padding: 10px;
+    margin: 10px;
 }
 
 .copyright {
