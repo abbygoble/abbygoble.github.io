@@ -1,3 +1,4 @@
+/* css reset*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,26 +43,31 @@ table {
 	border-spacing: 0;
 }
 
+/* html format */
 html {
     font-size: 16px;
 }
 
+/* attribute selector for wrapper */
 .wrapper {
     width: 70%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.5) ;
 }
 
+/* adjust size of image */
 .wide img {
     width: 100%;
 }
 
+/* format for text overlaying image */
 .container {
     position: relative;
      text-align: center;
      color: white;   
 }
 
+/* format text overlaying image */
 .centered {
     font-size: 3.5rem;
     position: absolute;
@@ -70,6 +76,7 @@ html {
     transform: translate(-50%, -50%);
 }
 
+/* attribute selector nav bar */
 nav ul li {
     display: inline;
     border-right: 1px solid gray;
@@ -81,16 +88,19 @@ nav ul li {
     margin-top: 50px;
 }
 
+/* attribute selector subtitle */
 .subtitle {
     font-size: 2rem;
     padding: 10px;
     margin-top: 20px;
 }
 
+/* adjust line height of filler text */
 .fillertext {
     line-height: 25px;
 }
 
+/* format subheading size and spacing */
 .subheading {
     font-size: 1.5rem;
     padding: 10px;
@@ -98,11 +108,13 @@ nav ul li {
     margin-bottom: 5px;
 }
 
+/* attribute selector list formatting */
 .facts {
  list-style-type: none;
- padding: 30px;
+ padding: 10px;
 }
 
+/* pseudo class */
 .bullet::before {
     content: "•";
     font-size: 1.5rem;
@@ -110,21 +122,26 @@ nav ul li {
     margin-right: 5px;
 }
 
+/* format divider between nav bar */
 .contact {
     border-right: none;
 }
 
+/* pseudo class */
 a:link, a:visited {
     color: black;
     text-decoration: none;
 }
 
+/* float image and adjust formatting */
 .image img {
     width: 23%;
     margin-left: 10px;
     margin-right: 10px;
     float: left;
 }
+
+/* format box */
 .box {
     align-content: center;
     width: 95%;
@@ -133,6 +150,7 @@ a:link, a:visited {
     margin: 10px;  
 }
 
+/* attribute selector form aswer text type */
 input [type=text] {
     display: block;
     width: 100%;
@@ -141,52 +159,65 @@ input [type=text] {
     box-sizing: border-box;
 }
 
+/* attribute selector for textarea */
 textarea {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0px;
+    padding: 2px;
+    margin: 10px;
     box-sizing: border-box;
+    line-height: 25px;
 }
 
+/* alter display for radio type */
 input [type=radio] {
     display: inline;
 }
 
+/* set alignment for form answer */
 .information {
     padding: 2px;
     margin: 10px;
     margin-top: 20px;
 }
 
+/* alter size of name answer space */
 #yourname {
     width: 100%;
+    line-height: 25px;
 }
 
+/* alter size of email answer space */
 #youremail {
     width: 100%;
+    line-height: 25px;
 }
 
+/* space heading 3 */
 h3 {
     padding: 5px;
 }
 
+/* format send button with color, border, spacing */
 button {
     text-transform: uppercase;
     background-color: #aad4cf;
     background-color: rgba(255, 255, 255, 0.5);
     border-color: black;
+    border-width: 1px;
     color: black;
     border-radius: 0%;
     padding: 10px;
-    margin: 10px;
+    margin: 15px;
 }
 
+/* format copyright and alignment */
 .copyright {
     text-align: right;
     padding: 12px 12px;
     margin: 8px;
 }
 
+/* set font and page background colour */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
