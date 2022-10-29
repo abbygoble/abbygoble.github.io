@@ -166,6 +166,16 @@ input [type=radio] {
     width: 100%;
 }
 
+button {
+    text-transform: uppercase;
+    background-color: #aad4cf;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: black;
+    color: black;
+    border-radius: 0%;
+
+}
+
 .copyright {
     text-align: right;
     padding: 12px 12px;
@@ -174,5 +184,5 @@ input [type=radio] {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #aad4cf; 
+    background-color: #aad4cf;
 }
