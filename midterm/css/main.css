@@ -88,6 +88,10 @@ nav ul li {
     margin-top: 50px;
 }
 
+.nav {
+    line-height: 40px;
+}
+
 /* attribute selector subtitle */
 .subtitle {
     font-size: 2rem;
@@ -213,8 +217,7 @@ button {
 /* format copyright and alignment */
 .copyright {
     text-align: right;
-    padding: 12px 12px;
-    margin: 8px;
+    padding: 30px;
 }
 
 /* set font and page background colour */
