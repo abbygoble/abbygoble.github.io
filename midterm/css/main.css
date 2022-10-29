@@ -50,14 +50,20 @@ html {
 
 /* attribute selector for wrapper */
 .wrapper {
-    width: 70%;
-    margin: auto;
+    display: flex;
     background-color: rgba(255, 255, 255, 0.5) ;
+    width: 1170px;
+    max-width: 70%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 /* adjust size of image */
 .wide img {
-    width: 100%;
+    max-width: 70%;
+    overflow: hidden;
 }
 
 /* format for text overlaying image */
@@ -148,6 +154,7 @@ a:link, a:visited {
 
 /* format box */
 .box {
+    position: relative;
     align-content: center;
     width: 95%;
     border: 1px solid black;
@@ -219,6 +226,8 @@ button {
 .copyright {
     text-align: right;
     padding: 30px;
+    padding-right: 50px;
+    margin: 10px;
 }
 
 /* set font and page background colour */
