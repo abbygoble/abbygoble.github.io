@@ -64,6 +64,8 @@ html {
 .wide img {
     max-width: 70%;
     overflow: hidden;
+    justify-content: center;
+    order: 1;
 }
 
 /* format for text overlaying image */
