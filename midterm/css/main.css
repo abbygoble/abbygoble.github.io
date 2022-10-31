@@ -49,7 +49,7 @@ table {
 
 /* html format */
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* attribute selector for wrapper */
@@ -118,6 +118,9 @@ nav ul li {
 .fillertext {
     line-height: 25px;
     padding: 10px;
+    padding-top: 0px;
+    margin-right: 10px;
+    font-size: 1rem;
 }
 
 /* format subheading size and spacing */
@@ -157,7 +160,8 @@ a:link, a:visited {
 .image img {
     width: 23%;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
     float: left;
 }
 
@@ -199,6 +203,7 @@ input [type=radio] {
     padding: 2px;
     margin: 10px;
     margin-top: 20px;
+    line-height: 25px;
 }
 
 /* alter size of name answer space */
@@ -214,9 +219,10 @@ input [type=radio] {
 }
 
 /* space heading 3 */
-/* h3 {
-    padding: 5px;
-} */
+h3 {
+    font-size: 1.15rem;
+    line-height: 50px;
+}
 
 .radio {
     margin: 0 10px;
