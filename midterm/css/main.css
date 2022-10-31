@@ -43,6 +43,10 @@ table {
 	border-spacing: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* html format */
 html {
     font-size: 16px;
@@ -50,7 +54,6 @@ html {
 
 /* attribute selector for wrapper */
 .wrapper {
-    display: flex;
     background-color: rgba(255, 255, 255, 0.5) ;
     width: 1170px;
     max-width: 70%;
@@ -61,18 +64,22 @@ html {
 }
 
 /* adjust size of image */
-.wide img {
-    max-width: 70%;
-    overflow: hidden;
-    justify-content: center;
-    order: 1;
+.wide {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 /* format for text overlaying image */
 .container {
+    width: 1170px;
     position: relative;
      text-align: center;
-     color: white;   
+     color: white; 
+     margin: 0 auto;  
+     max-width: 70%;
 }
 
 /* format text overlaying image */
@@ -158,7 +165,7 @@ a:link, a:visited {
 .box {
     position: relative;
     align-content: center;
-    width: 95%;
+    /* width: 95%; */
     border: 1px solid black;
     padding: 2px;
     margin: 10px;  
@@ -179,6 +186,7 @@ textarea {
     padding: 2px;
     box-sizing: border-box;
     line-height: 25px;
+    height: 100px;
 }
 
 /* alter display for radio type */
@@ -206,8 +214,12 @@ input [type=radio] {
 }
 
 /* space heading 3 */
-h3 {
+/* h3 {
     padding: 5px;
+} */
+
+.radio {
+    margin: 0 10px;
 }
 
 /* format send button with color, border, spacing */
