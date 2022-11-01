@@ -180,7 +180,7 @@ input [type=text] {
     display: block;
     width: 100%;
     padding: 12px 20px;
-    margin: 8 px 0;
+    margin: 8px;
     box-sizing: border-box;
 }
 
