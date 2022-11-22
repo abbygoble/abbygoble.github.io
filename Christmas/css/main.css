@@ -85,7 +85,35 @@ html {
     background-color: rgb(173, 215, 251);
 }
 
+nav ul li {
+    display: inline;
+    background-color: blue;
+    text-transform: uppercase;
+    padding: 93px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem; 
+    color: white;
 
+}
+
+.elfimage {
+    width: 35%;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.intro {
+    font-size: 2rem;
+    line-height: 50px;
+    padding: 50px;
+}
+
+footer {
+    clear: left;
+}
 
 body {
     background-color: aliceblue;
