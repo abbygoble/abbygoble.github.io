@@ -49,6 +49,8 @@ table {
 	border-spacing: 0;
 }
 
+/* Actual CSS Begins */
+
 nav {
     background-color: black;
     color: darkgoldenrod;
@@ -62,6 +64,12 @@ nav {
 
 ul {
     list-style: none;
+}
+
+.search {
+    background-color: black;
+    border-radius: none;
+    border: 1px solid darkgoldenrod;
 }
 
 .banner {
