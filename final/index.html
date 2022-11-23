@@ -14,12 +14,14 @@
     <header>
          <nav>
                 <ul>
-                    <img src="images/logo.png" alt="Company Logo">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Team</li>
-                    <li>Contact</li>
+                    <div class="hover">
+                        <img src="images/logo.png" alt="Company Logo">
+                        <li><a href="#home">Home</a></li>
+                    </div>
+                    <li class="hover"><a href="#about">About Us</a></li>
+                    <li class="hover"><a href="#services">Services</a></li>
+                    <li class="hover"><a href="#team">Team</a></li>
+                    <li class="hover"><a href="#contact">Contact</a></li>
                     <div>
                         <form action="#">
                             <input type="text" placeholder="Search" name="search">
@@ -28,7 +30,7 @@
                     </div>
                 </ul>
             </nav>
-        <div class="banner">
+        <div class="banner" id="home">
             <div class="wrapper">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste quis non sit id ab dicta inventore deleniti minima. Repellendus atque quos minima tenetur eos temporibus, alias quisquam? Dolorum, sint!</p>
@@ -38,7 +40,7 @@
     </header>
     <main>
         <!-- About Us -->
-        <div class="about">
+        <div class="about" id="about">
             <div>
                 <div>
                     <img src="images/about-us.jpg" alt="Office View">
@@ -54,7 +56,7 @@
         <div>
             <div>
                 <div>
-                    <h2>Our Services</h2>
+                    <h2 id="services">Our Services</h2>
                 </div>
                 <div class="card">
                     <img src="images/digital.jpg" alt="Digital Transformation">
@@ -108,7 +110,7 @@
         </div>
         <!-- Our Team -->
         <div>
-            <div>
+            <div id="team">
                 <h2>Our Team</h2>
                 <div class="card">
                     <img src="images/john.jpg" alt="John Doe">
@@ -132,7 +134,7 @@
         </div>
         <!-- Contact Sheet -->
         <div>
-            <div>
+            <div id="contact">
                 <div>
                     <h2>Contact Us</h2>
                 </div>
