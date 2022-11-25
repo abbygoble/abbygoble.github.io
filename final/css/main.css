@@ -53,14 +53,18 @@ table {
 
 .html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
-nav {
+
+
+/* nav {
     background-color: black;
-    color: darkgoldenrod;
     display: flex;
     justify-content: center;
-}
+    width: 100%;
+    max-width: 1000px;
+} */
 
 .logo {
     justify-content: ;
@@ -68,14 +72,53 @@ nav {
 
 ul {
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: (repeat(6,1fr));
+    grid-template-areas: 
+    "log"
+    "home"
+    "about"
+    "services"
+    "team"
+    "contact";
 }
 
-.hover {
-    width: 100%;
-    max-width: fit-content;
+.link:nth-child(1) {
+    grid-area: log;
 }
 
-.hover:hover {
+.link:nth-child(2) {
+    grid-area: home;
+}
+
+.link:nth-child(3) {
+    grid-area: about;
+}
+
+.link:nth-child(4) {
+    grid-area: services;
+}
+
+.link:nth-child(5) {
+    grid-area: team;
+}
+
+.link:nth-child(6) {
+    grid-area: contact;
+}
+
+.link:link {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+.link:visited {
+    color: darkgoldenrod;
+    text-decoration: none; 
+}
+
+.link:hover {
     background-color: darkgoldenrod;
     color: black;
 }
@@ -91,15 +134,41 @@ ul {
 }
 
 .wrapper {
-   background-color: black;
+   /* background-color: black;
    color: white;
-   opacity: 0.5;
+   opacity: 0.5; */
    
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    line-height: 25px;
+    padding: 10px;
+}
+
+.connect {
+    background-color: darkgoldenrod;
+    color: black;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 10px;
 }
 
 .about {
     background-color: burlywood;
     margin: auto;
+}
+
+.office {
+    margin: 10px;
 }
 
 .card {
@@ -110,10 +179,17 @@ ul {
     background-color: black;
     color: white;
     border: none;
+    padding: 10px;
+    margin: 10px;
 }
 
 .grid1 {
     display: grid;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .vision {
