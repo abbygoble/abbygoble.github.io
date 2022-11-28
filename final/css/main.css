@@ -56,18 +56,18 @@ table {
     font-size: 16px;
 }
 
-
-
-/* nav {
+header {
     background-color: black;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 1000px;
-} */
 
-.logo {
-    justify-content: ;
+} 
+
+nav {
+
+    margin: 0 15px;
+}
+
+nav .logo {
+    margin: 20px 0 0;
 }
 
 ul {
@@ -124,9 +124,9 @@ ul .link:hover {
     background-color: darkgoldenrod;
 }
 
-.hover:hover {
+/* li:link {
     background-color: darkgoldenrod;
-}
+} */
 
 .search {
     background-color: black;
@@ -134,15 +134,16 @@ ul .link:hover {
     border: 1px solid darkgoldenrod;
 }
 
+.wrapper {
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    margin: 40px auto;
+ }
+
 .banner {
     background-image: url(../images/main-banner.jpg);
-}
-
-.wrapper {
-   /* background-color: black;
-   color: white;
-   opacity: 0.5; */
-   
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -178,6 +179,7 @@ h2 {
 
 .card {
     background-color: cornsilk;
+    margin: 10px;
 }
 
 .black {
@@ -206,6 +208,11 @@ hr {
     border-top: 1px solid darkgoldenrod;
 }
 
+textarea {
+    width: 100%;
+    margin: 20px;
+}
+
 .send {
     background-color: black;
     color: darkgoldenrod;
@@ -229,6 +236,10 @@ iframe {
     margin: auto;
 }
 
+.location {
+    margin: 20px auto;
+}
+
 footer {
     background-color: black;
     color: darkgoldenrod;
@@ -248,5 +259,31 @@ footer {
 
 .unsplash:visited {
    color: darkgoldenrod; 
+}
+
+
+a.link {
+    display: block;
+    color: darkgoldenrod;
+    background-color: black;
+    text-align: center;
+}
+
+a.link:hover {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+/* .search input {
+    width: calc(100% - 6%);
+} */
+
+
+.search {
+    display: flex;
+}
+
+.search input {
+    flex-grow: 1;
 }
 
