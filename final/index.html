@@ -6,32 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Final</title>
     <link href="css/main.css" rel="stylesheet"> 
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="wrapper">
          <nav>
                 <ul>
-                    <div class="hover">
-                        <img src="images/logo.png" alt="Company Logo" class="logo">
-                        <li><a href="#home" class="link">Home</a></li>
-                    </div>
-                    <li class="hover"><a href="#about" class="link">About Us</a></li>
-                    <li class="hover"><a href="#services" class="link">Services</a></li>
-                    <li class="hover"><a href="#team" class="link">Team</a></li>
-                    <li class="hover"><a href="#contact" class="link">Contact</a></li>
+                    <li><img src="images/logo.png" alt="Company Logo" class="logo"></li>
+                    <li><a href="#home" class="link">Home</a></li>
+                    <li><a href="#about" class="link">About Us</a></li>
+                    <li><a href="#services" class="link">Services</a></li>
+                    <li><a href="#team" class="link">Team</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
                     <div>
                         <form action="#" class="search">
                             <input type="text" placeholder="Search" name="search">
-                            <button class="search" type="submit"><i class="fa fa-search" style="color:darkgoldenrod"></i></button>
+                            <button class="search" type="submit"><i class="fa fa-search fa-border" style="color:darkgoldenrod" ></i></button>
                         </form>
                     </div>
                 </ul>
             </nav>
         <div class="banner" id="home">
-            <div class="wrapper">
+            <div class="opacity">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste quis non sit id ab dicta inventore deleniti minima. Repellendus atque quos minima tenetur eos temporibus, alias quisquam? Dolorum, sint!</p>
                 <button type="submit" class="connect">Connect with Us <i class="fa fa-caret-right"></i></button>
@@ -40,7 +42,7 @@
     </header>
     <main>
         <!-- About Us -->
-        <div class="about" id="about">
+        <div class="wrapper about" id="about">
             <div>
                 <div>
                     <img src="images/about-us.jpg" alt="Office View" class="office">
@@ -53,45 +55,45 @@
             </div>
         </div>
         <!-- Our Services -->
-        <div>
+        <div class="wrapper">
             <div class="grid1">
                 <div>
                     <h2 id="services">Our Services</h2>
                 </div>
-                <div class="card">
-                    <img src="images/digital.jpg" alt="Digital Transformation">
+                <div class="card digital">
+                    <img src="images/digital.jpg" alt="Digital Transformation" class="servepic">
                     <div>
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam dignissimos beatae, saepe quis facere quibusdam, quam suscipit id excepturi modi consequatur recusandae quidem eveniet laborum cumque amet atque esse?</p>
                         <button class="black" type="button">Digital Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/marketing.jpg" alt="Marketing">
+                <div class="card marketing">
+                    <img src="images/marketing.jpg" alt="Marketing" class="servepic">
                     <div>
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nihil accusamus molestiae possimus quis iure, distinctio ad facilis ipsam iusto, at atque, eveniet ratione corporis rem excepturi dignissimos neque voluptate?</p>
                         <button class="black" type="button">Marketing Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/video.jpg" alt="Video Production">
+                <div class="card video">
+                    <img src="images/video.jpg" alt="Video Production" class="servepic">
                     <div>
                         <h3>Video Production</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In aperiam reprehenderit exercitationem ullam, explicabo necessitatibus laborum minima est amet quisquam doloremque quia vel provident ab veritatis. Dolore recusandae asperiores obcaecati.</p>
                         <button class="black" type="button">Video Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/web.jpg" alt="Web Development">
+                <div class="card web">
+                    <img src="images/web.jpg" alt="Web Development" class="servepic">
                     <div>
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas atque soluta cumque deleniti iusto rem eligendi inventore natus eum, aperiam, ipsa commodi, sit pariatur est. Minus facilis corrupti ipsum recusandae!</p>
                         <button class="black" type="button">Web Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/print.jpg" alt="Print">
+                <div class="card print">
+                    <img src="images/print.jpg" alt="Print" class="servepic">
                     <div>
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquid aliquam aspernatur impedit perspiciatis quia dignissimos quos tenetur reprehenderit totam dolor laudantium, qui, fuga consectetur. Molestias maiores dolore ipsam provident.</p>
@@ -101,39 +103,37 @@
             </div>
         </div>
         <!-- Our Vision -->
-        <div class="vision">
+        <div class="wrapper vision">
             <div>
                 <h2>Our Vision</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est repudiandae reiciendis inventore nam nihil omnis rem aspernatur voluptas voluptatibus modi eius eveniet veritatis vitae cupiditate, molestiae optio minima fugiat.</p>
-                <button type="button">Learn More <i class="fa fa-caret-right"></i></button>
+                <button type="button" class="learn">Learn More <i class="fa fa-caret-right"></i></button>
             </div>
         </div>
         <!-- Our Team -->
-        <div>
-            <div id="team">
+        <div class="wrapper">
+            <div class="ourteam" id="team">
                 <h2>Our Team</h2>
                 <div class="card">
-                    <img src="images/john.jpg" alt="John Doe">
                     <div>
+                        <img src="images/john.jpg" alt="John Doe" class="servepic">
                         <h2>John Doe</h2>
                         <h4>CEO and Co-owner</h4>
-                        <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolore! Corporis eum pariatur ad magni nulla exercitationem tempora sit, dolore ducimus minima sunt amet ipsam voluptatibus, fugiat doloribus dolorem cum?</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/bob.jpg" alt="Bob Rite">
+                    <img src="images/bob.jpg" alt="Bob Rite" class="servepic">
                     <div>
                         <h2>Bob Rite</h2>
                         <h4>CFO and Co-owner</h4>
-                        <hr>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam id expedita accusamus, soluta nihil odio laboriosam consequuntur dignissimos explicabo facilis inventore voluptatum pariatur laudantium deleniti, perspiciatis voluptates tempora, at sequi.</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Contact Sheet -->
-        <div>
+        <div class="wrapper">
             <div id="contact">
                 <div>
                     <h2>Contact Us</h2>
@@ -142,15 +142,15 @@
                     <h2>Send us a message</h2>
                     <form action="#" method="get">
                         <div>
-                            <label for="fullname">Full Name</label> <br>
+                            <label for="fullname">Full Name</label> 
                             <input type="text" id="fullname" name="fullname">    
                         </div>
                         <div>
-                            <label for="email">Email</label> <br>
+                            <label for="email">Email</label> 
                             <input type="email" id="email" name="email">
                         </div>
                         <div>
-                            <label for="message">Message</label> <br>
+                            <label for="message">Message</label> 
                             <textarea id="message" name="message"></textarea>
                         </div>
                         <button type="submit" class="send">Send</button>
@@ -187,7 +187,7 @@
         </div>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="wrapper">
         <div>
             <p class="copyright">&copy; Copyright Three Star Media, 2020</p>
             <p class="copyright">All images are taken from <a href="https://unsplash.com" class="unsplash" target="_blank">Unsplash</a>

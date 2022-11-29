@@ -50,10 +50,9 @@ table {
 }
 
 /* Actual CSS Begins */
-
-.html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
 }
 
 header {
@@ -70,88 +69,38 @@ nav .logo {
     margin: 20px 0 0;
 }
 
-ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: (repeat(6,1fr));
-    grid-template-areas: 
-    "log"
-    "home"
-    "about"
-    "services"
-    "team"
-    "contact";
-}
-
-.link:nth-child(1) {
-    grid-area: log;
-}
-
-.link:nth-child(2) {
-    grid-area: home;
-}
-
-.link:nth-child(3) {
-    grid-area: about;
-}
-
-.link:nth-child(4) {
-    grid-area: services;
-}
-
-.link:nth-child(5) {
-    grid-area: team;
-}
-
-.link:nth-child(6) {
-    grid-area: contact;
-}
-
-.link:link {
-    color: darkgoldenrod;
-    text-decoration: none;
-}
-
-.link:visited {
-    color: darkgoldenrod;
-    text-decoration: none; 
-}
-
-ul .link:hover {
-    color: black;
-    text-decoration: none;
-    background-color: darkgoldenrod;
-}
-
-/* li:link {
-    background-color: darkgoldenrod;
-} */
-
 .search {
     background-color: black;
     border-radius: none;
     border: 1px solid darkgoldenrod;
 }
-
+/* 
 .wrapper {
-    background-color: black;
-    color: white;
-    opacity: 0.5;
-    margin: 40px auto;
- }
+ } */
 
 .banner {
     background-image: url(../images/main-banner.jpg);
     background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-size-max: 1200px */
+    ;
 }
 
-h1 {
-    font-size: 5rem;
+.opacity {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    /* margin: 24px auto; */
+}
+
+.opacity h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
 }
 
 p {
-    line-height: 25px;
+    line-height: 15px;
     padding: 10px;
 }
 
@@ -164,7 +113,8 @@ p {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
     padding: 10px;
 }
 
@@ -174,12 +124,24 @@ h2 {
 }
 
 .office {
-    margin: 10px;
+    display: block;
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 10px;
 }
 
 .card {
     background-color: cornsilk;
-    margin: 10px;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 95%;
+    max-width: 1100px; 
+}
+
+.servepic {
+    width: 100%;
+    max-width: 1200px;
 }
 
 .black {
@@ -201,22 +163,39 @@ h3 {
 
 .vision {
     background-image: url(../images/vision.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     color: white;
 }
 
-hr {
-    border-top: 1px solid darkgoldenrod;
+.learn {
+    padding: 20px;
+    margin: 10px;
+}
+
+label {
+    padding: 20px;
 }
 
 textarea {
-    width: 100%;
+    width: 90%;
+    max-width: 1100px;
     margin: 20px;
+    margin-bottom: 0;
 }
 
 .send {
     background-color: black;
     color: darkgoldenrod;
     border: none;
+    margin: 20px;
+   
+}
+
+table {
+    table-layout: fixed;
 }
 
 table, th, td {
@@ -261,12 +240,27 @@ footer {
    color: darkgoldenrod; 
 }
 
+input[type=text] {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px;
+    line-height: 25px;
+}
+
+input[type=email] {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px;
+    line-height: 25px;
+}
 
 a.link {
     display: block;
     color: darkgoldenrod;
     background-color: black;
     text-align: center;
+    text-decoration: none;
+    padding: 10px;
 }
 
 a.link:hover {
@@ -274,16 +268,23 @@ a.link:hover {
     color: black;
 }
 
-/* .search input {
-    width: calc(100% - 6%);
-} */
-
+li:hover {
+    background-color: darkgoldenrod;
+    color: black;
+}
 
 .search {
     display: flex;
+    border: none;
+    margin-bottom: 20px;
+
 }
 
 .search input {
     flex-grow: 1;
 }
 
+.fa-border {
+    border: 1px solid darkgoldenrod;
+    padding: 10px;
+}
