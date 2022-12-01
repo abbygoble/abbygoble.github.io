@@ -312,3 +312,46 @@ li:hover {
     border: 1px solid darkgoldenrod;
     padding: 10px;
 }
+
+
+
+
+@media screen and (min-width: 1200px) {
+   ul {
+    display: flex;
+   } 
+
+
+
+.sidebyside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: 
+    "service service service service service service"
+    "digital digital digital marketing marketing marketing"
+    "video video web web print print";
+}
+.services {
+    grid-area: service;
+}
+.digital {
+    grid-area: digital;
+}
+.marketing {
+    grid-area: marketing;
+}
+.video {
+    grid-area: video;
+}
+.web {
+    grid-area: web;
+}
+.print {
+    grid-area: print;
+}
+}
