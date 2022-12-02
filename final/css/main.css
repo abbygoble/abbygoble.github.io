@@ -49,6 +49,12 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+
+
+
 /* Actual CSS Begins */
 html {
     font-family: 'Open Sans', sans-serif;
@@ -56,12 +62,11 @@ html {
 }
 
 header {
-    background-color: black;
+    background-color: #222;
 
 } 
 
 nav {
-
     margin: 0 15px;
 }
 
@@ -70,33 +75,37 @@ nav .logo {
 }
 
 .search {
-    background-color: black;
+    background-color: #222;
     border-radius: none;
-    border: 1px solid darkgoldenrod;
+    border: 1px solid #c78c06;
 }
-/* 
+
 .wrapper {
- } */
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+ } 
 
 .banner {
     background-image: url(../images/main-banner.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    /* background-size-max: 1200px */
-    ;
+    padding: 30px 0px;
 }
 
 .opacity {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(72, 54, 54, 0.6);
     color: white;
     width: 100%;
     max-width: 1200px;
-    /* margin: 24px auto; */
+    
 }
 
 .opacity h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 900;
+    padding: 10px;
+    line-height: 60px;
 }
 
 p {
@@ -105,7 +114,7 @@ p {
 }
 
 .connect {
-    background-color: darkgoldenrod;
+    background-color: #c78c06;
     color: black;
     padding: 10px;
     border: none;
@@ -119,7 +128,7 @@ h2 {
 }
 
 .about {
-    background-color: burlywood;
+    background-color: #ffe6ac;
     margin: auto;
 }
 
@@ -141,23 +150,20 @@ h4 {
 
 .card {
     background-color: #ffe6ac;
-    margin: auto;
-    margin-bottom: 15px;
-    width: 95%;
-    max-width: 1100px; 
+    margin-top: 10px;
+}
+
+.print {
+    margin: 10px;
+}
+
+.services {
+    margin-top: 20px;
 }
 
 .servepic {
     width: 100%;
     max-width: 1200px;
-}
-
-.black {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 10px;
 }
 
 .grid1 {
@@ -208,8 +214,8 @@ textarea {
 }
 
 .send {
-    background-color: black;
-    color: darkgoldenrod;
+    background-color: #222;
+    color: #c78c06;
     border: none;
     margin: 20px;
     font-size: 1.5rem;
@@ -221,10 +227,10 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #222;
     border-collapse: collapse;
     padding: 10px;
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
@@ -243,7 +249,9 @@ iframe {
 
 footer {
     background-color: #222;
-    color: darkgoldenrod;
+    color: #c78c06;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .copyright {
@@ -255,11 +263,11 @@ footer {
 }
 
 .unsplash:link {
-    color: darkgoldenrod;
+    color: #c78c06;
 }
 
 .unsplash:visited {
-   color: darkgoldenrod; 
+   color: #c78c06; 
 }
 
 input[type=text] {
@@ -278,23 +286,20 @@ input[type=email] {
     border: 1px solid #222;
 }
 
+
+
 a.link {
     display: block;
-    color: darkgoldenrod;
-    background-color: black;
+    color: #c78c06;
+    background-color: #222;
     text-align: center;
     text-decoration: none;
     padding: 10px;
 }
 
 a.link:hover {
-    background-color: darkgoldenrod;
-    color: black;
-}
-
-li:hover {
-    background-color: darkgoldenrod;
-    color: black;
+    background-color: #c78c06;
+    color: #222;
 }
 
 .search {
@@ -309,25 +314,31 @@ li:hover {
 }
 
 .fa-border {
-    border: 1px solid darkgoldenrod;
+    border: 1px solid #c78c06;
     padding: 10px;
 }
 
 
+.nav-logo {
+    background-color: #c78c06;
+}
+
 
 
 @media screen and (min-width: 1200px) {
-   ul {
-    display: flex;
-   } 
-
-
-
+    .banner {
+        background-image: url(../images/main-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 30px 70px;
+    .wrapper {
+        width: 100%;
+        margin: auto;
+     } 
 .sidebyside {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 .grid1 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -354,4 +365,78 @@ li:hover {
 .print {
     grid-area: print;
 }
+.map {
+    width: 50%;
 }
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "us us"
+    "form map"
+    "tablee tablee";
+}
+.contactus {
+    grid-area: us;
+}
+.form {
+    grid-area: form;
+}
+.table {
+    grid-area: tablee;
+}
+.map {
+    grid-area: map;
+}
+
+.ourteam { 
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.ourteam .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ourteam .card-two img{
+    order: 2;
+}
+
+.ourteam .card-two div {
+    order: 1;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+nav ul a {
+    padding: 30px;
+}
+
+.search {
+    margin-bottom: 0;
+}
+
+input[type=text] {
+    margin: 0;
+}
+
+.nav-logo {
+    background-color: transparent;
+}
+h1 {
+    font-size: 10.5rem;
+}
+}
+
