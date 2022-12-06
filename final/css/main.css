@@ -230,7 +230,7 @@ table, th, td {
     border: 1px solid #222;
     border-collapse: collapse;
     padding: 10px;
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 
@@ -323,7 +323,19 @@ a.link:hover {
     background-color: #c78c06;
 }
 
-
+.black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    border: none;
+    color: white;
+}
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (min-width: 1200px) {
     .banner {
@@ -331,13 +343,22 @@ a.link:hover {
         background-repeat: no-repeat;
         background-size: 100%;
         padding: 30px 70px;
+    }
     .wrapper {
         width: 100%;
         margin: auto;
      } 
 .sidebyside {
+    width: 85%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.logo {
+    padding: 10px;
+}
+.card {
+    margin: 6px;
 }
 .grid1 {
     display: grid;
@@ -366,7 +387,7 @@ a.link:hover {
     grid-area: print;
 }
 .map {
-    width: 50%;
+    width: 100%;
 }
 .contact {
     display: grid;
@@ -384,6 +405,7 @@ a.link:hover {
 }
 .table {
     grid-area: tablee;
+    margin-bottom: 15px;
 }
 .map {
     grid-area: map;
@@ -428,15 +450,37 @@ nav ul a {
     margin-bottom: 0;
 }
 
-input[type=text] {
-    margin: 0;
-}
-
 .nav-logo {
     background-color: transparent;
 }
 h1 {
     font-size: 10.5rem;
+}
+input[type=text] {
+    line-height: 30px;
+}
+input[type=email] {
+    line-height: 30px;
+}
+textarea {
+    line-height: 20px;
+}
+.card1 {
+    margin-bottom: 0;
+}
+.card-two {
+    margin-top: 0;
+}
+.textbox {
+    width: 85%;
+    margin: auto;
+}
+.vision {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.office {
+    padding-bottom: 10px;
 }
 }
 
