@@ -81,7 +81,7 @@ nav .logo {
 }
 
 .wrapper {
-    width: 95%;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
  } 
@@ -98,18 +98,21 @@ nav .logo {
     color: white;
     width: 100%;
     max-width: 1200px;
+    padding: 5px;
+
     
 }
 
 .opacity h1 {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     font-weight: 900;
     padding: 10px;
     line-height: 60px;
+    line-height: 100px;
 }
 
 p {
-    line-height: 15px;
+    line-height: 20px;
     padding: 10px;
 }
 
@@ -119,12 +122,13 @@ p {
     padding: 10px;
     border: none;
     margin: 10px;
+    font-size: 1.5rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bolder;
-    padding: 10px;
+    padding: 20px;
 }
 
 .about {
@@ -171,9 +175,16 @@ h4 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bolder;
     margin: 10px;
+    padding: 10px;
+}
+
+
+.label {
+    font-size: 1.2rem;
+    line-height: 10px;
 }
 
 .vision {
@@ -183,10 +194,14 @@ h3 {
     background-size: cover;
     position: relative;
     color: white;
+    padding: 8px;
     
 }
 
 .learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     margin: 15px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -196,8 +211,8 @@ h3 {
 }
 
 .fa-caret-right {
-    font-size: 2.3rem;
-    padding-left: 10px;
+    font-size: 3rem;
+    padding-left: 20px;
 }
 
 label {
@@ -286,8 +301,6 @@ input[type=email] {
     border: 1px solid #222;
 }
 
-
-
 a.link {
     display: block;
     color: #c78c06;
@@ -305,8 +318,6 @@ a.link:hover {
 .search {
     display: flex;
     border: none;
-    margin-bottom: 20px;
-
 }
 
 .search input {
@@ -330,14 +341,23 @@ a.link:hover {
     background-color: #222;
     border: none;
     color: white;
+    padding: 30px;
+    font-size: 2rem;
+    margin: 20px;
 }
 .connect {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 
-@media screen and (min-width: 1200px) {
+.joet .bobt{
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 760px) {
     .banner {
         background-image: url(../images/main-banner.jpg);
         background-repeat: no-repeat;
@@ -345,7 +365,7 @@ a.link:hover {
         padding: 30px 70px;
     }
     .wrapper {
-        width: 100%;
+        max-width: 1200px;
         margin: auto;
      } 
 .sidebyside {
@@ -355,7 +375,7 @@ a.link:hover {
     grid-template-columns: 1fr 1fr;
 }
 .logo {
-    padding: 10px;
+    padding: 30px;
 }
 .card {
     margin: 6px;
@@ -430,16 +450,21 @@ a.link:hover {
 }
 
 
-nav {
+/* nav {
     display: flex;
     align-items: center;
-}
+} */
 
 nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-grow: 1;
+    font-size: 1.3rem;
+}
+
+a.link:hover {
+    padding: 20px 30px;
 }
 
 nav ul a {
