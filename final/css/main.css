@@ -107,11 +107,15 @@ nav .logo {
 
 
 
-.navbar {
-    padding: 15px;
+ul {
+    
     display: flex;
+    flex-direction: column;
 }
 
+ul input {
+    flex-grow: 1;
+}
 
 .fa {
     margin-left: -6px;
@@ -121,7 +125,7 @@ nav .logo {
 .searchbutton {
     background-color: #222;
     border: none;
-    margin: none;
+    margin: 0;
 }
 
 
@@ -397,9 +401,6 @@ footer {
     color: #c78c06; 
  }
 
-#fullname {
-    margin: 20px;
-}
 
 
 
@@ -434,7 +435,12 @@ nav {
     flex-grow: 1;
 }  */
 
-
+#fullname {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px;
+    border: 1px solid #222;
+    line-height: 20px;
 
 
 
@@ -453,10 +459,9 @@ nav {
         padding: 30px 70px;
     }
 
-    .navbar {
+    ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
      }
 
     .sidebyside {
