@@ -49,93 +49,169 @@ table {
 	border-spacing: 0;
 }
 
-
-
-
-
-
-
+/* //////////////////////////////////////////////// */
 /* Actual CSS Begins */
+
+/* sets font type and base sizing for entire site */
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
 }
 
-header {
-    background-color: #222;
-
-} 
-
-nav {
-    margin: 0 15px;
-}
-
-nav .logo {
-    margin: 20px 0 0;
-}
-
-.search {
-    background-color: #222;
-    border-radius: none;
-    border: 1px solid #c78c06;
-}
-
+/* sets width for entire website and centers content */
 .wrapper {
     width: 100%;
     max-width: 1200px;
     margin: auto;
  } 
 
+/* gives header a background colour of dark grey */
+header {
+    background-color: #222;
+
+} 
+
+/* gives nav links proper centered display, changes colour to yellow gold and gets rid of given link formatting */
+a.link {
+    display: block;
+    color: #c78c06;
+    background-color: #222;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* inverses colours for text and background on links when mouse hovers over them */
+a.link:hover {
+    background-color: #c78c06;
+    color: #222;
+}
+
+/* gives margin to the top of logo image to correspond with the provided example's spacing*/
+nav .logo {
+    margin: 20px 0 0;
+}
+
+/* gives colour of yellow gold and sets width of logo background */
+.nav-logo {
+    background-color: #c78c06;
+    width: 95%;
+    margin: auto;
+}
+
+/* gets rid of border on search bar */
+.search {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* matches background of search button to the rest of header, gets rid of border */
+.searchbutton {
+    background-color: #222;
+    border: none;
+    margin: none;
+}
+
+/* sets colour and background colour of search icon for search bar */
+.fa-search {
+    color: #c78c06;
+    background-color: #222;
+}
+
+/* sets border for search bar icon and gives it size and colour */
+.fa-border {
+    border: 1px solid #c78c06;
+    padding: 10px;
+}
+
+/* sets width of search bar */
+.searchtext {
+    width: 100%;
+}
+
+ /* creates background image for header and formats by centering and making sure there is no repeat */
 .banner {
     background-image: url(../images/main-banner.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 30px 0px;
+    height: auto;
 }
 
+/* sets a black box on top of background image to make text more visible */
 .opacity {
     background-color: rgba(72, 54, 54, 0.6);
     color: white;
     width: 100%;
     max-width: 1200px;
-    padding: 5px;
-
-    
+    padding: 5px;  
 }
 
-.opacity h1 {
-    font-size: 5.5rem;
+/* formats text heading for the title of the site */
+h1 {
+    font-size: 4.5rem;
     font-weight: 900;
     padding: 10px;
-    line-height: 60px;
-    line-height: 100px;
+    line-height: 50px;
 }
 
-p {
-    line-height: 20px;
-    padding: 10px;
-}
-
-.connect {
-    background-color: #c78c06;
-    color: black;
-    padding: 10px;
-    border: none;
-    margin: 10px;
-    font-size: 1.5rem;
-}
-
+/* sets the size, degree of boldness, and padding of all h2's */
 h2 {
     font-size: 3.5rem;
     font-weight: bolder;
     padding: 20px;
 }
 
+/* sets size, degree of boldness, and spacing for all h3's */
+h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* sets size, degree of boldness, spacing, for all h4s, also adds yellow gold divider with bottom border */
+h4 {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 3px; 
+    border-bottom: 2px solid #c78c06;
+}
+
+/* sets formatting for the height of paragraph lines and adds padding */
+p {
+    line-height: 20px;
+    padding: 10px;
+}
+
+/* sets size, colour, and font size for connect with us button, sets display to flex and centers content*/
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #c78c06;
+    color: black;
+    border: none;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+/* sets size and spacing of arrow pointing right icon */
+.fa-caret-right {
+    font-size: 3rem;
+    padding-left: 20px;
+}
+
+/* sets the background colour and centers the about section */
 .about {
     background-color: #ffe6ac;
     margin: auto;
 }
 
+/* formats image in about us section, adjusts spacing, size, and display type */
 .office {
     display: block;
     width: 95%;
@@ -144,49 +220,42 @@ h2 {
     padding-top: 10px;
 }
 
-h4 {
-    font-weight: bold;
-   margin-left: 10px;
-   margin-right: 10px;
-   padding-bottom: 3px; 
-   border-bottom: 2px solid #c78c06;
+/* puts our services items in grid format */
+.grid1 {
+    display: grid;
 }
 
+/* sets background colour and divider through upper margin for cards */
 .card {
     background-color: #ffe6ac;
     margin-top: 10px;
 }
 
+/* formats buttons in marketing section, displays as flex, centers content, sets colour, removes border, sets spacing and font size */
+.black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    border: none;
+    color: white;
+    padding: 30px;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+/* adds spacing below print card for divider */
 .print {
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
-.services {
-    margin-top: 20px;
-}
-
+/* sets width for all images within our services section */
 .servepic {
     width: 100%;
     max-width: 1200px;
 }
 
-.grid1 {
-    display: grid;
-}
-
-h3 {
-    font-size: 2rem;
-    font-weight: bolder;
-    margin: 10px;
-    padding: 10px;
-}
-
-
-.label {
-    font-size: 1.2rem;
-    line-height: 10px;
-}
-
+/* formats our vision section with background image, size, position, and font colour */
 .vision {
     background-image: url(../images/vision.jpg);
     background-position: center;
@@ -195,9 +264,9 @@ h3 {
     position: relative;
     color: white;
     padding: 8px;
-    
 }
 
+/* lines icon and text up, centers, fixes spacing and sets colour for button in our vision section */
 .learn {
     display: flex;
     justify-content: center;
@@ -210,15 +279,44 @@ h3 {
     border: 1px solid #c78c06;
 }
 
-.fa-caret-right {
-    font-size: 3rem;
-    padding-left: 20px;
+/* sets width for sections that do not span entire web page width */
+.smallwrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
-label {
+/* increases padding for text within our team cards so they don't go from edge to edge */
+.joet .bobt{
+    padding: 10px;
+}
+
+/* sets the line height, size of font, and spacing for directions for contact form */
+.label {
+    font-size: 1.2rem;
+    line-height: 10px;
     padding: 20px;
 }
 
+/* tells form to collect text answer, sets width and spacing, line height, and border formatting */
+input[type=text] {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px;
+    line-height: 20px;
+    border: 1px solid #222;
+}
+
+/* tells form to collect email as answer, sets width and spacing, line height, and border formatting */
+input[type=email] {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px;
+    line-height: 20px;
+    border: 1px solid #222;
+}
+
+/* tells form to collect message through text area as answer, sets width, height, and spacing, line height, and border formatting */
 textarea {
     width: 90%;
     max-width: 1100px;
@@ -228,6 +326,7 @@ textarea {
     border: 1px solid #222;
 }
 
+/* formats send button for contact form with colours, size, border, and spacing */
 .send {
     background-color: #222;
     color: #c78c06;
@@ -237,10 +336,13 @@ textarea {
    
 }
 
+/* gives table a fixed layout for hours of operation */
 table {
     table-layout: fixed;
 }
 
+
+/* gives all table section border, spacing, and centers table while setting its width */
 table, th, td {
     border: 1px solid #222;
     border-collapse: collapse;
@@ -249,19 +351,24 @@ table, th, td {
     margin: auto;
 }
 
+/* gives background colour to the table headers for emphasis */
 th {
     background-color: #ffe6ac;
 }
+
+/* sets width and block display for map */
 iframe {
     width: 95%;
     display: block;
     margin: auto;
 }
 
+/* centers map and corrects spacing with margin */
 .location {
     margin: 20px auto;
 }
 
+/* formats footer with colour and width */
 footer {
     background-color: #222;
     color: #c78c06;
@@ -269,243 +376,190 @@ footer {
     max-width: 1200px;
 }
 
-.copyright {
-    padding: 20px;
-}
-
-.copyright:nth-child(2) {
-    padding-top: 0px;
-}
-
+/* changes link colour from the factory settings to match page colour scheme of yellow gold */
 .unsplash:link {
     color: #c78c06;
 }
 
+/* changes link colour from the factory settings to match page colour scheme of yellow gold */
 .unsplash:visited {
-   color: #c78c06; 
-}
+    color: #c78c06; 
+ }
 
-input[type=text] {
-    width: 90%;
-    max-width: 1100px;
-    margin: 20px;
-    line-height: 20px;
-    border: 1px solid #222;
-}
 
-input[type=email] {
-    width: 90%;
-    max-width: 1100px;
-    margin: 20px;
-    line-height: 20px;
-    border: 1px solid #222;
-}
 
-a.link {
-    display: block;
-    color: #c78c06;
-    background-color: #222;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-}
 
-a.link:hover {
-    background-color: #c78c06;
-    color: #222;
-}
 
+
+
+/* .copyright:nth-child(2) {
+    padding-top: 0px;
+} */
+
+/* 
+.copyright {
+    padding: 20px;
+} */
+
+/* 
+nav {
+    margin: 0 15px;
+} */
+
+/* .services {
+    margin-top: 20px;
+} */
 .search {
     display: flex;
+    width: 100%;
+    position: relative;
     border: none;
-}
+    align-items: center;
+} */
 
 .search input {
     flex-grow: 1;
 }
 
-.fa-border {
-    border: 1px solid #c78c06;
-    padding: 10px;
-}
 
 
-.nav-logo {
-    background-color: #c78c06;
-}
-
-.black {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #222;
-    border: none;
-    color: white;
-    padding: 30px;
-    font-size: 2rem;
-    margin: 20px;
-}
-.connect {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-.joet .bobt{
-    padding: 10px;
-}
 
 
+/* sets media screen so that webpage format will change once it gets to width of 760px or larger */
 @media screen and (min-width: 760px) {
+    /* sets max width for website and centers wrapper */
+    .wrapper {
+        max-width: 1200px;
+        margin: auto;
+     } 
+    /* sets background image with spacing and sizing */
     .banner {
         background-image: url(../images/main-banner.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         padding: 30px 70px;
     }
-    .wrapper {
-        max-width: 1200px;
+
+    .sidebyside {
+        width: 85%;
         margin: auto;
-     } 
-.sidebyside {
-    width: 85%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.logo {
-    padding: 30px;
-}
-.card {
-    margin: 6px;
-}
-.grid1 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-areas: 
-    "service service service service service service"
-    "digital digital digital marketing marketing marketing"
-    "video video web web print print";
-}
-.services {
-    grid-area: service;
-}
-.digital {
-    grid-area: digital;
-}
-.marketing {
-    grid-area: marketing;
-}
-.video {
-    grid-area: video;
-}
-.web {
-    grid-area: web;
-}
-.print {
-    grid-area: print;
-}
-.map {
-    width: 100%;
-}
-.contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "us us"
-    "form map"
-    "tablee tablee";
-}
-.contactus {
-    grid-area: us;
-}
-.form {
-    grid-area: form;
-}
-.table {
-    grid-area: tablee;
-    margin-bottom: 15px;
-}
-.map {
-    grid-area: map;
-}
-
-.ourteam { 
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-.ourteam .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.ourteam .card-two img{
-    order: 2;
-}
-
-.ourteam .card-two div {
-    order: 1;
-}
-
-
-/* nav {
-    display: flex;
-    align-items: center;
-} */
-
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-grow: 1;
-    font-size: 1.3rem;
-}
-
-a.link:hover {
-    padding: 20px 30px;
-}
-
-nav ul a {
-    padding: 30px;
-}
-
-.search {
-    margin-bottom: 0;
-}
-
-.nav-logo {
-    background-color: transparent;
-}
-h1 {
-    font-size: 10.5rem;
-}
-input[type=text] {
-    line-height: 30px;
-}
-input[type=email] {
-    line-height: 30px;
-}
-textarea {
-    line-height: 20px;
-}
-.card1 {
-    margin-bottom: 0;
-}
-.card-two {
-    margin-top: 0;
-}
-.textbox {
-    width: 85%;
-    margin: auto;
-}
-.vision {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.office {
-    padding-bottom: 10px;
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card {
+        margin: 6px;
+    }
+    .grid1 {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        "service service service service service service"
+        "digital digital digital marketing marketing marketing"
+        "video video web web print print";
+    }
+    .services {
+        grid-area: service;
+    }
+    .digital {
+        grid-area: digital;
+    }
+    .marketing {
+        grid-area: marketing;
+    }
+    .video {
+        grid-area: video;
+    }
+    .web {        
+        grid-area: web;
+    }
+    .print {
+        grid-area: print;
+    }
+    .map {
+        width: 100%;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "us us"
+        "form map"
+        "tablee tablee";
+    }
+    .contactus {
+        grid-area: us;
+    }
+    .form {
+        grid-area: form;
+    }
+    .table {
+        grid-area: tablee;
+        margin-bottom: 15px;
+    }
+    .map {
+        grid-area: map;
+    }
+    .ourteam { 
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .ourteam .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .ourteam .card-two img{
+        order: 2;
+    }
+    .ourteam .card-two div {
+        order: 1;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        font-size: 1.3rem;
+    }
+    a.link:hover {
+        padding: 20px 30px;
+    }
+    nav ul a {
+        padding: 30px;
+    }
+    .search {
+        margin-bottom: 0;
+    }
+    .nav-logo {
+        background-color: transparent;
+    }
+    h1 {
+        font-size: 10.5rem;
+    }
+    input[type=text] {
+        line-height: 30px;
+    }
+    input[type=email] {
+        line-height: 30px;
+    }
+    textarea {
+        line-height: 20px;
+    }
+    .card1 {
+        margin-bottom: 0;
+    }
+    .card-two {
+        margin-top: 0;
+    }
+    .textbox {
+        width: 85%;
+        margin: auto;
+    }
+    .vision {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .office {
+        padding-bottom: 10px;
+    }
 }
 
