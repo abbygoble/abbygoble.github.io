@@ -400,11 +400,17 @@ footer {
     color: #c78c06; 
  }
 
-input [type=text] {
+input[type=text] {
     display: block;
-    width: 90%;
+    width: 100%;
     max-width: 1100%;
+}
 
+input[type=text]:nth-child(2) {
+    width: 90%;
+    margin: 20px;
+    line-height: 20px;
+    border: 1px solid #222;
 }
 
 .services {
@@ -579,6 +585,6 @@ input [type=text] {
         padding-bottom: 10px;
     }
     iframe {
-        width: 100%;
+        width: 90%;
 }
 
