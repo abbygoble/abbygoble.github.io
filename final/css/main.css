@@ -106,6 +106,9 @@ nav .logo {
 }
 
 
+li {
+    margin: 0 10px;
+}
 
 ul {
     
@@ -114,7 +117,7 @@ ul {
 }
 
 ul input {
-    flex-grow: 1;
+    flex-grow: ;
 }
 
 .fa {
@@ -401,24 +404,12 @@ footer {
     color: #c78c06; 
  }
 
+input [type=text] {
+    display: block;
+    width: 90%;
+    max-width: 1100%;
 
-
-
-
-
-/* .copyright:nth-child(2) {
-    padding-top: 0px;
-} */
-
-/* 
-.copyright {
-    padding: 20px;
-} */
-
-/* 
-nav {
-    margin: 0 15px;
-} */
+}
 
 .services {
     padding-left: 0px;
@@ -435,12 +426,7 @@ nav {
     flex-grow: 1;
 }  */
 
-#fullname {
-    width: 90%;
-    max-width: 1100px;
-    margin: 20px;
-    border: 1px solid #222;
-    line-height: 20px;
+
 
 
 
