@@ -116,10 +116,6 @@ ul {
     flex-direction: column;
 }
 
-ul input {
-    flex-grow: ;
-}
-
 .fa {
     margin-left: -6px;
 }
@@ -448,6 +444,11 @@ input [type=text] {
     ul {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+     }
+
+     li {
+        flex: auto;
      }
 
     .sidebyside {
@@ -467,7 +468,7 @@ input [type=text] {
         display: grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-areas: 
-        "service service . . . . "
+        /* "service service . . . . " */
         "digital digital digital marketing marketing marketing"
         "video video web web print print";
     }
