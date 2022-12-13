@@ -260,7 +260,7 @@ p {
 /* sets width for all images within our services section */
 .servepic {
     width: 100%;
-    max-width: 1200px;
+    max-width: 760px;
 }
 
 /* formats our vision section with background image, size, position, and font colour */
