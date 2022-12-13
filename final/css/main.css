@@ -86,10 +86,9 @@ a.link:hover {
     color: #222;
 }
 
-/* gives margin to the top of logo image to correspond with the provided example's spacing
-nav .logo {
-    margin: 20px 0 0;
-} */
+nav {
+    padding: 10px;
+}
 
 /* gives colour of yellow gold and sets width of logo background */
 .nav-logo {
@@ -151,12 +150,12 @@ ul {
 }
 
 /* sets a black box on top of background image to make text more visible */
-#opacity {
+.opacity {
     background-color: rgba(72, 54, 54, 0.6);
     color: white;
     width: 100%;
-    max-width: 760px;
-    padding: 5px;  
+    max-width: 1200px;
+    padding-bottom: 5px;  
 }
 
 /* formats text heading for the title of the site */
@@ -413,20 +412,6 @@ input[type=text]:nth-child(2) {
     border: 1px solid #222;
 }
 
-.services {
-    padding-left: 0px;
-}
-/* .search {
-    display: flex;
-    width: 100%;
-    position: relative;
-    border: none;
-    align-items: center;
-} */
-
-/* .search input {
-    flex-grow: 1;
-}  */
 
 
 
@@ -458,7 +443,7 @@ input[type=text]:nth-child(2) {
      }
 
     .sidebyside {
-        width: 85%;
+        width: 90%;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -469,6 +454,7 @@ input[type=text]:nth-child(2) {
     .black {
         width: 90%;
         margin: auto;
+        margin-bottom: 10px;
     }
     .grid1 {
         display: grid;
@@ -501,6 +487,7 @@ input[type=text]:nth-child(2) {
         width: 100%;
     }
     .contact {
+        margin: auto;
         width: 90%;
         display: grid;
         grid-template-columns: 1fr 1fr;
