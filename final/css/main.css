@@ -62,7 +62,6 @@ html {
 .wrapper {
     width: 100%;
     max-width: 1200px;
-    margin: auto;
  } 
 
 /* gives header a background colour of dark grey */
@@ -87,15 +86,15 @@ a.link:hover {
     color: #222;
 }
 
-/* gives margin to the top of logo image to correspond with the provided example's spacing*/
+/* gives margin to the top of logo image to correspond with the provided example's spacing
 nav .logo {
     margin: 20px 0 0;
-}
+} */
 
 /* gives colour of yellow gold and sets width of logo background */
 .nav-logo {
     background-color: #c78c06;
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 
@@ -106,6 +105,18 @@ nav .logo {
     padding: 0;
 }
 
+
+
+.navbar {
+    padding: 15px;
+    display: flex;
+}
+
+
+.fa {
+    margin-left: -6px;
+}
+
 /* matches background of search button to the rest of header, gets rid of border */
 .searchbutton {
     background-color: #222;
@@ -113,21 +124,18 @@ nav .logo {
     margin: none;
 }
 
+
 /* sets colour and background colour of search icon for search bar */
 .fa-search {
     color: #c78c06;
     background-color: #222;
+    font-size: 1.5rem;
 }
 
 /* sets border for search bar icon and gives it size and colour */
 .fa-border {
     border: 1px solid #c78c06;
     padding: 10px;
-}
-
-/* sets width of search bar */
-.searchtext {
-    width: 100%;
 }
 
  /* creates background image for header and formats by centering and making sure there is no repeat */
@@ -298,13 +306,16 @@ p {
     padding: 20px;
 }
 
-/* tells form to collect text answer, sets width and spacing, line height, and border formatting */
-input[type=text] {
-    width: 90%;
-    max-width: 1100px;
-    margin: 20px;
-    line-height: 20px;
-    border: 1px solid #222;
+
+.search {
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    margin: auto;
+}
+
+.search input {
+    flex-grow: 1;
 }
 
 /* tells form to collect email as answer, sets width and spacing, line height, and border formatting */
@@ -358,7 +369,7 @@ th {
 
 /* sets width and block display for map */
 iframe {
-    width: 95%;
+    width: 90%;
     display: block;
     margin: auto;
 }
@@ -386,7 +397,9 @@ footer {
     color: #c78c06; 
  }
 
-
+#fullname {
+    margin: 20px;
+}
 
 
 
@@ -406,10 +419,10 @@ nav {
     margin: 0 15px;
 } */
 
-/* .services {
-    margin-top: 20px;
-} */
-.search {
+.services {
+    padding-left: 0px;
+}
+/* .search {
     display: flex;
     width: 100%;
     position: relative;
@@ -417,9 +430,9 @@ nav {
     align-items: center;
 } */
 
-.search input {
+/* .search input {
     flex-grow: 1;
-}
+}  */
 
 
 
@@ -440,6 +453,12 @@ nav {
         padding: 30px 70px;
     }
 
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+     }
+
     .sidebyside {
         width: 85%;
         margin: auto;
@@ -449,16 +468,21 @@ nav {
     .card {
         margin: 6px;
     }
+    .black {
+        width: 90%;
+        margin: auto;
+    }
     .grid1 {
         display: grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-areas: 
-        "service service service service service service"
+        "service service . . . . "
         "digital digital digital marketing marketing marketing"
         "video video web web print print";
     }
     .services {
         grid-area: service;
+        width: 100%;
     }
     .digital {
         grid-area: digital;
@@ -533,7 +557,8 @@ nav {
         background-color: transparent;
     }
     h1 {
-        font-size: 10.5rem;
+        font-size: 6.5rem;
+        line-height: 125px;
     }
     input[type=text] {
         line-height: 30px;
@@ -561,5 +586,7 @@ nav {
     .office {
         padding-bottom: 10px;
     }
+    iframe {
+        width: 100%;
 }
 
