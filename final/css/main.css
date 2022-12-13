@@ -494,14 +494,14 @@ input [type=text] {
     .map {
         width: 100%;
     }
-    /* .contact {
+    .contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "us us"
         "form map"
         "tablee tablee";
-    } */
+    }
     .contactus {
         grid-area: us;
     }
