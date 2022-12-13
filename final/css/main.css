@@ -151,11 +151,11 @@ ul {
 }
 
 /* sets a black box on top of background image to make text more visible */
-.opacity {
+#opacity {
     background-color: rgba(72, 54, 54, 0.6);
     color: white;
     width: 100%;
-    max-width: 1200px;
+    max-width: 760px;
     padding: 5px;  
 }
 
@@ -501,6 +501,7 @@ input[type=text]:nth-child(2) {
         width: 100%;
     }
     .contact {
+        width: 90%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
