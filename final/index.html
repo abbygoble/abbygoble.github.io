@@ -5,27 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icons -->
+    <!-- Links webpage to icon stylesheet so that icons can appear on site -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Font -->
+    <!-- Links webpage to font stylesheet so that the selected google fonts can be imported from googlefonts website -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Final</title>
+    <!-- Links css stylesheet to index.html so the site can be styled -->
     <link href="css/main.css" rel="stylesheet">
 </head>
 
+<!-- container so that all following information is visible on site -->
 <body>
-    <!-- Header -->
+    <!-- container for the navigation and title/header of site -->
     <header class="wrapper">
+        <!-- contains all necessary information for website's navigation -->
         <nav>
+            <!-- establishes unordered list so that list items can be made for navigation -->
             <ul>
+                <!-- List items that direct navigation to other areas of the site (through links) -->
+                <!-- logo image for site -->
                 <li class="nav-logo"><img src="images/logo.png" alt="Company Logo" class="logo link"></li>
                 <li><a href="#home" class="link">Home</a></li>
                 <li><a href="#about" class="link">About Us</a></li>
                 <li><a href="#services" class="link">Services</a></li>
                 <li><a href="#team" class="link">Team</a></li>
                 <li><a href="#contact" class="link">Contact</a></li>
+                <!-- creates search bar with search icon as buttom -->
                 <li><form action="#"  class="search">
                         <input type="text" class="link" placeholder="Search" name="search">
                         <button class="searchbutton" type="submit"><i class="fa fa-search fa-border"></i></button> 
@@ -33,27 +40,39 @@
                     </li>
             </ul>
         </nav>
+        <!-- contains .opacity -->
         <div class="banner" id="home">
+            <!-- container for container of title and intro -->
             <div class="opacity">
+                 <!-- contains title and introduction of website -->
                 <div>
+                    <!-- website title -->
                     <h1>Welcome to Three Star Media</h1>
+                    <!-- paragraph for webpage's introduction -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste quis non sit id ab dicta
                     inventore deleniti minima. Repellendus atque quos minima tenetur eos temporibus, alias quisquam?
                     Dolorum, sint!</p>
+                    <!-- creates button to submit form -->
                     <button type="submit" class="connect">Connect with Us <i class="fa fa-caret-right"></i></button>
                 </div>
             </div>
         </div>
     </header>
+    <!-- creates container for the main content -->
     <main>
-        <!-- About Us -->
+        <!-- creates container for About Us section -->
         <div class="wrapper about" id="about">
+            <!-- establishes container needed dyring stylesheet for grid layout -->
             <div class="sidebyside">
+                <!-- container for office image in About section, gives alternate text -->
                 <div>
                     <img src="images/about-us.jpg" alt="Office View" class="office">
                 </div>
+                <!-- contains title and text for About Us section -->
                 <div>
+                    <!-- header for About section -->
                     <h2>About Us</h2>
+                    <!-- establishes paragraph for About Us text -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa blanditiis delectus assumenda odit
                         labore consequuntur fugiat pariatur corrupti deserunt! Ipsum corrupti cumque beatae maxime?
                         Obcaecati similique ad dolorum officiis pariatur.</p>
@@ -63,93 +82,144 @@
                 </div>
             </div>
         </div>
-        <!-- Our Services -->
+        <!-- Establishes container for Our Services section -->
         <div class="wrapper">
+            <!-- creates container for Our Services Section title -->
             <div>
+                <!-- Our Services title -->
                 <h2 class="smallwrapper">Our Services</h2>
             </div>
+            <!-- establishes container needed to create grid layout for cards -->
             <div class="grid1 smallwrapper">
+                <!-- establsihes container for card formatting -->
                 <div class="card digital">
+                    <!-- image for services card -->
                     <img src="images/digital.jpg" alt="Digital Transformation" class="servepic">
+                    <!-- container for card text -->
                     <div>
+                        <!-- card header -->
                         <h3>Digital Transformation</h3>
+                        <!-- card text -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam dignissimos beatae,
                             saepe quis facere quibusdam, quam suscipit id excepturi modi consequatur recusandae quidem
                             eveniet laborum cumque amet atque esse?</p>
+                            <!-- creates button for follow information relevant to card topic -->
                         <button class="black" type="button">Digital Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
+                <!-- establsihes container for card formatting -->
                 <div class="card marketing">
+                    <!-- image for services card -->
                     <img src="images/marketing.jpg" alt="Marketing" class="servepic">
+                    <!-- container for card text and title -->
                     <div>
+                        <!-- card title -->
                         <h3>Marketing</h3>
+                        <!-- card text -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam dignissimos beatae,
                             saepe quis facere quibusdam, quam suscipit id excepturi modi consequatur recusandae quidem
                             eveniet laborum cumque amet atque esse?</p>
+                         <!-- creates button for follow information relevant to card topic --> 
                         <button class="black" type="button">Marketing Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
+                <!-- establsihes container for card formatting -->
                 <div class="card video">
+                    <!-- image for services card -->
                     <img src="images/video.jpg" alt="Video Production" class="servepic">
+                    <!-- establishes container for card title and text -->
                     <div>
+                        <!-- card title -->
                         <h3>Video Production</h3>
+                        <!-- card text -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam dignissimos beatae,
                             saepe quis facere quibusdam, quam suscipit id excepturi modi consequatur recusandae quidem
                             eveniet laborum cumque amet atque esse?</p>
+                         <!-- creates button for follow information relevant to card topic --> 
                         <button class="black" type="button">Video Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
+                <!-- establishes container for card -->
                 <div class="card web">
+                    <!-- image for card -->
                     <img src="images/web.jpg" alt="Web Development" class="servepic">
+                    <!-- establishes container for card title and text -->
                     <div>
+                        <!-- card title -->
                         <h3>Web Development</h3>
+                        <!-- card text -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam dignissimos beatae,
                             saepe quis facere quibusdam, quam suscipit id excepturi modi consequatur recusandae quidem
                             eveniet laborum cumque amet atque esse?</p>
+                              <!-- creates button for follow information relevant to card topic --> 
                         <button class="black" type="button">Web Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
+                <!-- establishes container for card -->
                 <div class="card print">
+                    <!-- image for card -->
                     <img src="images/print.jpg" alt="Print" class="servepic">
+                    <!-- establishes container for card title and text -->
                     <div>
+                        <!-- card title -->
                         <h3>Print</h3>
+                        <!-- card text -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam dignissimos beatae,
                             saepe quis facere quibusdam, quam suscipit id excepturi modi consequatur recusandae quidem
                             eveniet laborum cumque amet atque esse?</p>
+                              <!-- creates button for follow information relevant to card topic --> 
                         <button class="black" type="button">Print Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Our Vision -->
+        <!-- sets container for Our Vision section -->
         <div class="wrapper vision">
+            <!-- sets container for text within vision section -->
             <div class="textbox">
+                <!-- title for vision section -->
                 <h2>Our Vision</h2>
+                <!-- text for vision section -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est repudiandae reiciendis
                     inventore nam nihil omnis rem aspernatur voluptas voluptatibus modi eius eveniet veritatis vitae
                     cupiditate, molestiae optio minima fugiat.</p>
+                <!-- creates button to take to more details about vision section, adds icon of right facing arrow -->
                 <button type="button" class="learn">Learn More <i class="fa fa-caret-right"></i></button>
             </div>
         </div>
-        <!-- Our Team -->
+        <!-- Creates container for Our Team section -->
         <div class="wrapper smallwrapper">
+            <!-- title for Our Team section -->
             <h2>Our Team</h2>
+            <!-- establishes container for content in Our Team section -->
             <div class="ourteam" id="team">
+                <!-- establsihes card formatting for Our Team section, John Doe -->
                 <div class="card card1">
+                    <!-- image for John Doe card -->
                     <img src="images/john.jpg" alt="John Doe" class="servepic joei">
+                    <!-- creates container for text of John's card -->
                     <div class="joet">
+                        <!-- title of john's card -->
                         <h2>John Doe</h2>
+                        <!-- subtitle of john's card -->
                         <h4>CEO and Co-owner</h4>
+                        <!-- text for john's card -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolore! Corporis eum
                             pariatur ad magni nulla exercitationem tempora sit, dolore ducimus minima sunt amet ipsam
                             voluptatibus, fugiat doloribus dolorem cum?</p>
                     </div>
                 </div>
+                <!-- creates container for Bob Rite's card -->
                 <div class="card card-two">
+                    <!-- image for Bob's card -->
                     <img src="images/bob.jpg" alt="Bob Rite" class="servepic bobi">
+                    <!-- creates container for Bob's card text -->
                     <div class="bobt">
+                        <!-- bob's card title -->
                         <h2>Bob Rite</h2>
+                        <!-- bobs card subtitle -->
                         <h4>CFO and Co-owner</h4>
+                        <!-- bobs card text -->
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam id expedita accusamus, soluta
                             nihil odio laboriosam consequuntur dignissimos explicabo facilis inventore voluptatum
                             pariatur laudantium deleniti, perspiciatis voluptates tempora, at sequi.</p>
@@ -157,54 +227,77 @@
                 </div>
             </div>
         </div>
-        <!-- Contact Sheet -->
+        <!-- establishes container for form, map, and table -->
         <div class="contact">
+                <!-- creates container for Contact section header -->
                 <div class="contactus">
+                    <!-- contact section header -->
                     <h2>Contact Us</h2>
                 </div>
+                <!-- creates container for contact form -->
                 <div class="form">
+                    <!-- title for contact form -->
                     <h3>Send us a message</h3>
+                    <!-- determines type of form and what to do with data collection -->
                     <form action="#" method="get">
+                        <!-- creates container for the form's name section -->
                         <div>
+                            <!-- creates label for form answer 1 (full name) -->
                             <label for="fullname" class="label">Full Name</label>
+                            <!-- determines input type of form answer 1 (full name) -->
                             <input type="text" id="fullname" name="fullname">
                         </div>
+                        <!-- creates container for form's email section -->
                         <div>
+                            <!-- creates label for form answer 2 (email) -->
                             <label for="email" class="label">Email</label>
+                            <!-- determines input type of form answer 2 (email) -->
                             <input type="email" id="email" name="email">
                         </div>
+                        <!-- creates container for form's message section -->
                         <div>
+                            <!-- creates label for form answer 3 (message) -->
                             <label for="message" class="label">Message</label>
+                            <!-- determines input type for form answer 2 (text area)  -->
                             <textarea id="message" name="message"></textarea>
                         </div>
                         <button type="submit" class="send">Send</button>
                     </form>
                 </div>
-                <!-- Table -->
+                <!-- Establishes container for Hours of Operation section -->
                 <div class="table">
+                    <!-- title for Hours of Operation section -->
                     <h3>Hours of operation</h3>
+                    <!-- creates container for table -->
                     <table class="smallwrapper">
+                        <!-- creates header section of table -->
                         <thead>
                             <tr>
+                                <!-- gives labels to table header section -->
                                 <th>Days</th>
                                 <th>Hours</th>
                             </tr>
                         </thead>
+                        <!-- creates body section of table -->
                         <tbody>
                             <tr>
+                                <!-- creates data to be displayed in the body section of table for row 1-->
                                 <td>Monday - Friday</td>
                                 <td>9 AM - 6 PM</td>
                             </tr>
                             <tr>
+                                  <!-- creates data to be displayed in the body section of table for row 2 -->
                                 <td>Saturday - Sunday</td>
                                 <td>Closed</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <!-- Map -->
+                <!-- Container for map section -->
                 <div class="map">
+                    <!-- Map section title -->
                     <h3>Location</h3>
+                     <!-- links map so it may be displayed on webpage from google maps -->
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567607!2d-75.75712548451638!3d45.349927779099765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669129458123!5m2!1sen!2sca"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -212,10 +305,13 @@
                 </div>
         </div>
     </main>
-    <!-- Footer -->
+    <!-- Establishes container for footer -->
     <footer class="wrapper">
+        <!-- establishes container for footer text -->
         <div class="smallwrapper">
+            <!-- paragraph that contains page copyright -->
             <p class="copyright">&copy; Copyright Three Star Media, 2020</p>
+            <!-- paragraph that contains link to Unsplash in new tab to -->
             <p class="copyright">All images are taken from <a href="https://unsplash.com" class="unsplash"
                     target="_blank">Unsplash</a>
         </div>

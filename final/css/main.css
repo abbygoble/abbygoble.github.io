@@ -86,6 +86,7 @@ a.link:hover {
     color: #222;
 }
 
+/* gives padding to navigation so that nav doesn't span entire website width */
 nav {
     padding: 10px;
 }
@@ -104,17 +105,18 @@ nav {
     padding: 0;
 }
 
-
+/* sets width for navigation components via list items to 100% */
 li {
     width: 100%
 }
 
+/* gives flex format to navigation via unordered list so that it is displayed in vertical format */
 ul {
-    
     display: flex;
     flex-direction: column;
 }
 
+/* moves search icon to the left to remove gap between search bar and icon via margin */
 .fa {
     margin-left: -6px;
 }
@@ -125,7 +127,6 @@ ul {
     border: none;
     margin: 0;
 }
-
 
 /* sets colour and background colour of search icon for search bar */
 .fa-search {
@@ -308,16 +309,12 @@ p {
     padding: 20px;
 }
 
-
+/* formats search bar with flex, centers content and sets width */
 .search {
     display: flex;
     justify-content: center;
     width: 98%;
     margin: auto;
-}
-
-.search input {
-    flex-grow: 1;
 }
 
 /* tells form to collect email as answer, sets width and spacing, line height, and border formatting */
@@ -399,19 +396,20 @@ footer {
     color: #c78c06; 
  }
 
+/* formats input typf of text to siplay as block, and sets width */
 input[type=text] {
     display: block;
     width: 100%;
     max-width: 1100%;
 }
 
+/* affects full name section in contact form by styling width, centering, and adding border and line height */
 input[type=text]:nth-child(2) {
     width: 90%;
     margin: 20px;
     line-height: 20px;
     border: 1px solid #222;
 }
-
 
 
 
@@ -432,60 +430,82 @@ input[type=text]:nth-child(2) {
         padding: 30px 70px;
     }
 
+    /* sets unordered list to flex so style nav items display to evenly spaced and horizontal */
     ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
      }
 
+    /* sets list items display to flex */
      li {
         flex: auto;
      }
 
+    /* sets grid format for about us section, gives it width, and centers content */
     .sidebyside {
         width: 90%;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    /* gives a margin to cards */
     .card {
         margin: 6px;
     }
+
+    /* sets width of buttons in Our Services cards and centers them while adding a margin to the bottom */
     .black {
         width: 90%;
         margin: auto;
         margin-bottom: 10px;
     }
+    /* sets formatting for grid display of Our Services cards */
     .grid1 {
         display: grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-areas: 
-        /* "service service . . . . " */
         "digital digital digital marketing marketing marketing"
         "video video web web print print";
     }
+
+   /* sets width of Our Services header */
     .services {
-        grid-area: service;
         width: 100%;
     }
+
+    /* tells grid area what label to look for for digital card */
     .digital {
         grid-area: digital;
     }
+
+    /* tells grid area what label to look for for marketing card */
     .marketing {
         grid-area: marketing;
     }
+
+    /* tells grid area what label to look for for video card */
     .video {
         grid-area: video;
     }
+
+    /* tells grid area what label to look for for web development card */
     .web {        
         grid-area: web;
     }
+
+    /* tells grid area what label to look for for print card */
     .print {
         grid-area: print;
     }
+
+    /* sets width of map */
     .map {
         width: 100%;
     }
+
+    /* sets grid format for contact section, and sets width and centers content */
     .contact {
         margin: auto;
         width: 90%;
@@ -496,32 +516,44 @@ input[type=text]:nth-child(2) {
         "form map"
         "tablee tablee";
     }
+
+    /* tells grid area what label to look for for contact header */
     .contactus {
         grid-area: us;
     }
+
+    /* tells grid area what label to look for for contact form */
     .form {
         grid-area: form;
     }
+
+    /* tells grid area what label to look for for table */
     .table {
         grid-area: tablee;
         margin-bottom: 15px;
     }
+
+    /* tells grid area what label to look for for map */
     .map {
         grid-area: map;
     }
-    .ourteam { 
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    }
+
+    /* sets grid layout for our team section */
     .ourteam .card {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    /* sets card order for our team section */
     .ourteam .card-two img{
         order: 2;
     }
+
+    /* sets card order for our team section */
     .ourteam .card-two div {
         order: 1;
+
+     /* makes nav display as flex, centers content, and changes font size to 1.3rem */
     }
     nav ul {
         display: flex;
@@ -530,49 +562,77 @@ input[type=text]:nth-child(2) {
         flex-grow: 1;
         font-size: 1.3rem;
     }
+
+    /* changes padding for navigation sections so that the hover looks larger */
     a.link:hover {
         padding: 20px 30px;
     }
+
+    /* gives padding and spacing to navigation elements */
     nav ul a {
         padding: 30px;
     }
+
+    /* gets rid of extra space under search section */
     .search {
         margin-bottom: 0;
     }
+
+    /* gets rid of background colour for the image nav-logo */
     .nav-logo {
         background-color: transparent;
     }
+
+    /* makes site title larger and increases size of line height */
     h1 {
         font-size: 6.5rem;
         line-height: 125px;
+
+    /* enlarges line height for input types of text */
     }
     input[type=text] {
         line-height: 30px;
     }
+
+    /* enlarges line height for input types of email */
     input[type=email] {
         line-height: 30px;
     }
+
+    /* enlarges line height for input types of textarea */
     textarea {
         line-height: 20px;
     }
+
+    /* gets rid of margin at the bottom of John Doe's card */
     .card1 {
         margin-bottom: 0;
     }
+
+    /* gets rid pf margin at the top of Bob Rite's card */
     .card-two {
         margin-top: 0;
     }
+
+    /* sets width of text section for Our Vision */
     .textbox {
-        width: 85%;
+        width: 90%;
         margin: auto;
     }
+
+    /* gives margin to the top and bottom of our vision section */
     .vision {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+    /* puts padding under image of office in about us section */
     .office {
         padding-bottom: 10px;
     }
+
+    /* makes width of map 90% */
     iframe {
         width: 90%;
-}
-
+    }
+}    
